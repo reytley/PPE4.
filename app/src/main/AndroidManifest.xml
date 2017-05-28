@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.guest.testppe4">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".vuepatient" />
+        <activity android:name=".AfficheListePatient" />
+        <activity android:name=".ModificationPatient" />
+        <activity android:name=".ActImport" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AfficheListeVisite" />
+        <activity
+            android:name=".vueVisite"
+            android:label="@string/title_activity_vue_visite"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- <activity android:name=".modification_patient" /> -->
+        <activity android:name=".modification_visite" />
+        <activity android:name=".spashscreen" />
+        <activity android:name=".vue_message" />
+        <activity android:name=".EnvoiMessage" />
+        <activity android:name=".ActExport" />
+        <activity android:name=".affichelisteVisiteAuj" />
+        <activity android:name=".recherhePatient"></activity>
+    </application>
+
+</manifest>
